@@ -6,8 +6,8 @@
 
 Summary:        Ruby/EventMachine library
 Name:           rubygem-%{gem_name}
-Version:        1.0.8
-Release:        2%{?dist}
+Version:        1.2.0.1
+Release:        1%{?dist}
 Group:          Development/Languages
 License:        GPLv2 or Ruby
 URL:            http://rubyeventmachine.com
@@ -103,6 +103,8 @@ ruby -Ilib:$(dirs +1)%{gem_extdir_mri}:.:tests -e "Dir.glob 'tests/test_*.rb', &
   --ignore-name=/^test_set_sock_opt$/ \
   --ignore-name=/^test_connect_timeout$/ \
   --ignore-name=/^test_for_real$/ \
+  --ignore-name=/^test_nameserver/ \
+  --ignore-name=/^test_fork_reactor$/
 %endif
 
 popd
@@ -120,11 +122,8 @@ popd
 %files doc
 %doc %{gem_docdir}
 %doc %{gem_instdir}/CHANGELOG.md
-%{gem_instdir}/Gemfile
 %doc %{gem_instdir}/README.md
-%{gem_instdir}/Rakefile
 %doc %{gem_instdir}/docs
-%{gem_instdir}/eventmachine.gemspec
 %{gem_instdir}/examples
 # TODO: Hmm, we can build also JRuby bindigs.
 %{gem_instdir}/java
@@ -132,6 +131,10 @@ popd
 %{gem_instdir}/tests
 
 %changelog
+* Thu May 05 2016  Martin Mágr <mmagr@redhat.com> - 1.2.0.1-1
+- Updated to upstream version 1.2.0.1
+- Disabled two more network tests
+
 * Tue Mar 15 2016  Martin Mágr <mmagr@redhat.com> - 1.0.8-2
 - Disabled another network based test
 
