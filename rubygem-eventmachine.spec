@@ -6,7 +6,7 @@
 
 Summary:        Ruby/EventMachine library
 Name:           rubygem-%{gem_name}
-Version:        1.2.0.1
+Version:        1.2.1
 Release:        1%{?dist}
 Group:          Development/Languages
 License:        GPLv2 or Ruby
@@ -131,6 +131,9 @@ popd
 %{gem_instdir}/tests
 
 %changelog
+* Fri Dec 16 2016  Martin Mágr <mmagr@redhat.com> - 1.2.1-1
+- Updated to upstream version 1.2.1
+
 * Thu May 05 2016  Martin Mágr <mmagr@redhat.com> - 1.2.0.1-1
 - Updated to upstream version 1.2.0.1
 - Disabled two more network tests
