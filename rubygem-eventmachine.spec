@@ -6,7 +6,7 @@
 
 Summary:        Ruby/EventMachine library
 Name:           rubygem-%{gem_name}
-Version:        1.2.1
+Version:        XXX
 Release:        1%{?dist}
 Group:          Development/Languages
 License:        GPLv2 or Ruby
@@ -131,73 +131,3 @@ popd
 %{gem_instdir}/tests
 
 %changelog
-* Fri Dec 16 2016  Martin Mágr <mmagr@redhat.com> - 1.2.1-1
-- Updated to upstream version 1.2.1
-
-* Thu May 05 2016  Martin Mágr <mmagr@redhat.com> - 1.2.0.1-1
-- Updated to upstream version 1.2.0.1
-- Disabled two more network tests
-
-* Tue Mar 15 2016  Martin Mágr <mmagr@redhat.com> - 1.0.8-2
-- Disabled another network based test
-
-* Wed Feb 24 2016  Martin Mágr <mmagr@redhat.com> - 1.0.8-1
-- Updated to upstream version 1.0.8
-
-* Thu Mar 19 2015 Graeme Gillies <ggillies@redhat.com> - 1.0.6-2
-- Updated specfile to allow building on EPEL-7
-
-* Wed Feb 04 2015 Vít Ondruch <vondruch@redhat.com> - 1.0.6-1
-- Update to EventMachine 1.0.6.
-
-* Sat Jan 17 2015 Mamoru TASAKA <mtasaka@fedoraproject.org> - 1.0.4-1
-- 1.0.4 (https://github.com/eventmachine/eventmachine/issues/495)
-
-* Mon Aug 18 2014 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 1.0.3-5
-- Rebuilt for https://fedoraproject.org/wiki/Fedora_21_22_Mass_Rebuild
-
-* Sun Jun 08 2014 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 1.0.3-4
-- Rebuilt for https://fedoraproject.org/wiki/Fedora_21_Mass_Rebuild
-
-* Fri Apr 11 2014 Vít Ondruch <vondruch@redhat.com> - 1.0.3-3
-- Rebuilt for https://fedoraproject.org/wiki/Changes/Ruby_2.1
-
-* Sun Aug 04 2013 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 1.0.3-2
-- Rebuilt for https://fedoraproject.org/wiki/Fedora_20_Mass_Rebuild
-
-* Thu Apr 11 2013 Vít Ondruch <vondruch@redhat.com> - 1.0.3-1
-- Update to eventmachine 1.0.3.
-
-* Thu Feb 28 2013 Vít Ondruch <vondruch@redhat.com> - 1.0.1-1
-- Update to eventmachine 1.0.1.
-- Enable SSL support.
-
-* Wed Feb 27 2013 Vít Ondruch <vondruch@redhat.com> - 1.0.0-1
-- Update to eventmachine 1.0.0.
-
-* Wed Feb 27 2013 Vít Ondruch <vondruch@redhat.com> - 0.12.10-9
-- Rebuild for https://fedoraproject.org/wiki/Features/Ruby_2.0.0
-
-* Thu Feb 14 2013 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 0.12.10-8
-- Rebuilt for https://fedoraproject.org/wiki/Fedora_19_Mass_Rebuild
-
-* Sat Jul 21 2012 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 0.12.10-7
-- Rebuilt for https://fedoraproject.org/wiki/Fedora_18_Mass_Rebuild
-
-* Thu Jan 19 2012 Vít Ondruch <vondruch@redhat.com> - 0.12.10-6
-- Rebuilt for Ruby 1.9.3.
-
-* Sat Jan 14 2012 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 0.12.10-5
-- Rebuilt for https://fedoraproject.org/wiki/Fedora_17_Mass_Rebuild
-
-* Wed Feb 09 2011 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 0.12.10-4
-- Rebuilt for https://fedoraproject.org/wiki/Fedora_15_Mass_Rebuild
-
-* Sun Jan 31 2010 Ruben Kerkhof <ruben@rubenkerkhof.com> 0.12.10-3
-- More review fixes
-
-* Sun Jan 31 2010 Ruben Kerkhof <ruben@rubenkerkhof.com> 0.12.10-2
-- Review fixes (#556433)
-
-* Mon Jan 18 2010 Ruben Kerkhof <ruben@rubenkerkhof.com> - 0.12.10-1
-- Initial package
