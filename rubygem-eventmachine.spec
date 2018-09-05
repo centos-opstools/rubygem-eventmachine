@@ -7,7 +7,7 @@
 Summary:        Ruby/EventMachine library
 Name:           rubygem-%{gem_name}
 Version:        1.2.5
-Release:        1%{?dist}
+Release:        2%{?dist}
 Group:          Development/Languages
 License:        GPLv2 or Ruby
 URL:            http://rubyeventmachine.com
@@ -131,6 +131,9 @@ popd
 %{gem_instdir}/tests
 
 %changelog
+* Wed Sep 05 2018 Matthias Runge <mrunge@redhat.com> - 1.2.5-2
+- bump release to trigger rebuild
+
 * Fri Oct 13 2017  Martin Mágr <mmagr@redhat.com> - 1.2.5-1
 - Updated to upstream version 1.2.5
 
